@@ -1,0 +1,9 @@
+grep -i "Juan" datos.txt | wc -l
+grep -wc "Juan" datos.txt | cut -d ',' -f3
+grep -i "PROG" datos.txt
+grep -E "PROG$" datos.txt 
+
+sed 's/.com/.net/g' datos.txt
+grep -i "-" datos.txt
+$ awk -F ',' '$3>40{print $2,$3}' datos.txt
+cut -d ',' -f2,5 datos.txt | cut -d ' ' -f2 | sed 's/,/*/g'
