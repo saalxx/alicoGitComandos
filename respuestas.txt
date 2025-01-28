@@ -1,1 +1,2 @@
 grep -i "Juan" datos.txt | wc -l
+grep -wc "Juan" datos.txt | cut -d ',' -f3
